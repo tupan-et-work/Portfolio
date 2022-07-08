@@ -1,38 +1,71 @@
 *{
     margin: 0;
     padding: 0;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #171515; */
+}
+
+.secondList {
+    height: 5rem;
+    display: flex;
+    background: #262626;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     list-style: none;
 }
-body{
-    height: 100vh;
+.secondList li{
+    position: relative;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #666;
+    background-color: #171515;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 1rem;    
+    border-width: 1rem;
+}
+
+
+/* ------------ SOCIAL CONTACTS BAR --------------------------- */
+.mainMenuHome{
+    height: 5rem;
     display: flex;
     background: #262626;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-ul{
+.navigationIconsList{
     display: flex;
+    list-style: none;
 }
-ul li{
+.navigationIconsList li{
     position: relative;
     display: block;
-    height: 60px;
-    width: 60px;
-    font-size: 30px;
-    line-height: 60px;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
     color: #666;
     background-color: #171515;
     cursor: pointer;
     border-radius: 50%;
-    margin: 0 15px;    
+    margin: 0 1rem;    
+    border-width: 1rem;
 }
-ul li:before{
+.navigationIconsList li:before{
     position: absolute;
     content: '';
     top: 0;
     left: 0;
-    background-color: #d35400;
+    background-color: #0A82ED;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -40,11 +73,92 @@ ul li:before{
     transform: scale(0.9);
     transition: 0.5s;
 }
-ul li:hover:before{
-    filter: blur(4px);
-    box-shadow: 0 0 15 #d35400;
+.navigationIconsList li:nth-child(1):before{
+    background-color: #ff1a1a;
+}
+.navigationIconsList li:nth-child(2):before{
+    background-color: #0A82ED;
+}
+.navigationIconsList li:nth-child(3):before{
+    background-color: #e23670;
+}
+.navigationIconsList li:nth-child(4):before{
+    background-color: #04a2ffb3;
+}
+.navigationIconsList li:nth-child(5):before{
+    background-color: #0A82ED;
+}
+
+.navigationIconsList li:hover:before{
+    filter: blur(1rem);
+    box-shadow: 0 0 15 #0A82ED;
     transform: scale(1.2);
 }
+.navigationIconsList li:nth-child(1):hover:before{
+    filter: blur(1rem);
+    box-shadow: 0 0 15 #ff1a1a;
+    transform: scale(1.2);
+}
+.navigationIconsList li:nth-child(2):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0A82ED;
+    transform: scale(1.2);    
+}
+.navigationIconsList li:nth-child(3):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #e23670;
+    transform: scale(1.2);
+}
+.navigationIconsList li:nth-child(4):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #04a2ffb3;
+    transform: scale(1.2);
+}
+.navigationIconsList li:nth-child(5):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0A82ED;
+    transform: scale(1.2);
+}
+/* 2 part */
+
+.navigationIconsList li:nth-child(1):hover{
+    color:#ff1a1a;
+    box-shadow: 0 0 15px #ff1a1a;
+    text-shadow: 0 0 15px #ff1a1a;
+}
+.navigationIconsList li:nth-child(2):hover{
+    color:#0A82ED;
+    box-shadow: 0 0 15px #0A82ED;
+    text-shadow: 0 0 15px #0A82ED;
+}
+.navigationIconsList li:nth-child(3):hover{
+    color: #e23670;
+    box-shadow: 0 0 15px #e23670;
+    text-shadow: 0 0 15px #e23670;
+}
+.navigationIconsList li:nth-child(4):hover{
+    color:#04a2ffb3;
+    box-shadow: 0 0 15px #04a2ffb3;
+    text-shadow: 0 0 15px #04a2ffb3;
+}
+.navigationIconsList li:nth-child(5):hover{
+    color:#0A82ED;
+    box-shadow: 0 0 15px #0A82ED;
+    text-shadow: 0 0 15px #0A82ED;
+}
+
+
+/* 
+#0A82ED 
+#04a2ffb3
+#e23670
+#2a6cbb
+#ff1a1a
+#d35400
+*/
+
+
+
 
 
 /*
